@@ -2,10 +2,7 @@
 #include "complex.cpp"
 #include <iostream>
 #include <string> 
-
-
-// TODO:
-//       
+#include <assert.h>
 
 int main()
 {
@@ -13,14 +10,10 @@ int main()
     complex<int>* complexInt1 = new complex<int>(4,3);
     complex<int>* complexInt2 = new complex<int>(2,7);
     std::cout << "Testing constructor:" << std::endl;
-    complexInt1->getReal();
-    complexInt1->getImaginary();
-
-    complexInt2->getReal();
-    complexInt2->getImaginary();
-
-
-
-
+    assert(complexInt1->getReal() == 4);
+    assert(complexInt1->getImaginary()==3);
+    assert(complexInt2->getReal() == 2);
+    assert(complexInt2->getImaginary() == 7);
+    std::cout << "Constructor tests pass" << std::endl;
     return 0;
 }
