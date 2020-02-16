@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <cmath>
 #ifndef COMPLEX_H
 #define COMPLEX_H
 template <class T>
@@ -15,6 +16,7 @@ class complex
         std::string toString();
         void setReal(T real);
         void setImaginary(T imag);
+        T getMagnitude();
         complex<T> operator+ (complex<T> const &obj);
         complex<T> operator- (complex<T> const &obj);
         complex<T> operator/ (complex<T> const &obj);

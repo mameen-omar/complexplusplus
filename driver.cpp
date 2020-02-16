@@ -15,5 +15,6 @@ int main()
     assert(complexInt2->getReal() == 2);
     assert(complexInt2->getImaginary() == 7);
     std::cout << "Constructor tests pass" << std::endl;
+    
     return 0;
 }
