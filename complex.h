@@ -4,9 +4,8 @@
 #ifndef COMPLEX_H
 #define COMPLEX_H
 template <class T>
-class complex 
+class complex
 {
-    
     public:
         complex();
         complex(T real, T imaginary);
@@ -22,20 +21,13 @@ class complex
         complex<T> operator/ (complex<T> const &obj);
         complex<T> operator* (complex<T> const &obj);
         complex<T> operator% (complex<T> const &obj);
-friend std::ostream& operator<< (std::ostream &out, const complex<T>& point);
-
+        friend std::ostream& operator<< (std::ostream &out, const complex<T>& point);
         friend std::ostream& operator<<(std::ostream& os, const complex<T>& complex);
-
 
     private:
         T real;
         T imaginary;
-        
 
     protected:
-
 };
-
-
 #endif
-
